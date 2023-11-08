@@ -14,6 +14,8 @@
 		0E9673CF2AFAD97C00DC8E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9673CE2AFAD97C00DC8E2C /* Assets.xcassets */; };
 		0E9673D22AFAD97C00DC8E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9673D02AFAD97C00DC8E2C /* LaunchScreen.storyboard */; };
 		0E9673DB2AFAD9D200DC8E2C /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 0E9673DA2AFAD9D200DC8E2C /* SpringAnimation */; };
+		0E9673E32AFC0C0500DC8E2C /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9673E22AFC0C0500DC8E2C /* Animation.swift */; };
+		0E9673E52AFC0C4900DC8E2C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9673E42AFC0C4900DC8E2C /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		0E9673CE2AFAD97C00DC8E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E9673D12AFAD97C00DC8E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E9673D32AFAD97C00DC8E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9673E22AFC0C0500DC8E2C /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		0E9673E42AFC0C4900DC8E2C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +62,65 @@
 		0E9673C42AFAD97A00DC8E2C /* RandomAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				0E9673C52AFAD97A00DC8E2C /* AppDelegate.swift */,
-				0E9673C72AFAD97A00DC8E2C /* SceneDelegate.swift */,
-				0E9673C92AFAD97A00DC8E2C /* ViewController.swift */,
-				0E9673CB2AFAD97A00DC8E2C /* Main.storyboard */,
-				0E9673CE2AFAD97C00DC8E2C /* Assets.xcassets */,
-				0E9673D02AFAD97C00DC8E2C /* LaunchScreen.storyboard */,
-				0E9673D32AFAD97C00DC8E2C /* Info.plist */,
+				0E9673EB2AFC192000DC8E2C /* App */,
+				0E9673E82AFC18CF00DC8E2C /* Model */,
+				0E9673E92AFC18EB00DC8E2C /* Services */,
+				0E9673E62AFC15FD00DC8E2C /* ViewControllers */,
+				0E9673E72AFC18B800DC8E2C /* Storyboards */,
+				0E9673EA2AFC191100DC8E2C /* Resources  */,
 			);
 			path = RandomAnimation;
+			sourceTree = "<group>";
+		};
+		0E9673E62AFC15FD00DC8E2C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E9673C92AFAD97A00DC8E2C /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0E9673E72AFC18B800DC8E2C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0E9673CB2AFAD97A00DC8E2C /* Main.storyboard */,
+				0E9673D02AFAD97C00DC8E2C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0E9673E82AFC18CF00DC8E2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E9673E22AFC0C0500DC8E2C /* Animation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E9673E92AFC18EB00DC8E2C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0E9673E42AFC0C4900DC8E2C /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0E9673EA2AFC191100DC8E2C /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				0E9673CE2AFAD97C00DC8E2C /* Assets.xcassets */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		0E9673EB2AFC192000DC8E2C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0E9673C52AFAD97A00DC8E2C /* AppDelegate.swift */,
+				0E9673C72AFAD97A00DC8E2C /* SceneDelegate.swift */,
+				0E9673D32AFAD97C00DC8E2C /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +202,8 @@
 			files = (
 				0E9673CA2AFAD97A00DC8E2C /* ViewController.swift in Sources */,
 				0E9673C62AFAD97A00DC8E2C /* AppDelegate.swift in Sources */,
+				0E9673E32AFC0C0500DC8E2C /* Animation.swift in Sources */,
+				0E9673E52AFC0C4900DC8E2C /* DataStore.swift in Sources */,
 				0E9673C82AFAD97A00DC8E2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +358,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QQ83DLKAM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomAnimation/Info.plist;
+				INFOPLIST_FILE = RandomAnimation/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QQ83DLKAM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomAnimation/Info.plist;
+				INFOPLIST_FILE = RandomAnimation/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
